@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?aiml version = "1.0.1" encoding = "UTF-8"?>
+
+<aiml>
+  <category>
+    <pattern>ПРИВЕТ</pattern>
+    <template>
+      <random>
+        <li>Ну, привет</li>
+        <li>Здарова</li>
+        <li>Хей</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ХЕЙ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ЗДРАВСТВУЙ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>ЗДРАВСТВУЙТЕ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ХАЙ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ХЭЛЛОУ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ХЕЛЛОУ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>КАТЕГОРИЧЕСКИ ПРИВЕТСТВУЮ</pattern>
+    <template>
+      <srai>ПРИВЕТ</srai>
+    </template>
+  </category>
+
+  
+  <category>
+    <pattern>Я *</pattern>
+    <template>
+      <random>
+        <li>
+          Будем знакомы, <set name = "username"><star/></set>.
+        </li>
+        <li>
+          <set name = "username"><star/></set>, буду знать.
+        </li>
+        <li>
+          Привет, <set name = "username"><star/></set>, а я бот распознаватель!
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>МЕНЯ ЗОВУТ *</pattern>
+    <template>
+      <random>
+        <li>
+          Будем знакомы, <set name = "username"><star/></set>.
+        </li>
+        <li>
+          <set name = "username"><star/></set>, буду знать.
+        </li>
+        <li>
+          Привет, <set name = "username"><star/></set>, а я бот распознаватель!
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>МЕНЯ ЗОВУТ *, А ТЕБЯ?</pattern>
+    <template>
+      <random>
+        <li>
+          Будем знакомы, <set name = "username"><star/></set>. А я бот распознаватель.
+        </li>
+        <li>
+          <set name = "username"><star/></set>, буду знать. Я бот распознавателью.
+        </li>
+        <li>
+          Привет, <set name = "username"><star/></set>, а я бот распознаватель!
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* А ТЕБЯ?</pattern>
+    <template>
+      <random>
+        <li>
+          Будем знакомы, <set name = "username">
+            <star/>
+          </set>. А я бот распознаватель.
+        </li>
+        <li>
+          <set name = "username">
+            <star/>
+          </set>, буду знать. Я бот распознавателью.
+        </li>
+        <li>
+          Привет, <set name = "username">
+            <star/>
+          </set>, а я бот распознаватель!
+        </li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>ПОКА</pattern>
+    <template>
+      <random>
+        <li>
+          Давай, <get name = "username"/>.
+        </li>
+        <li>
+          Пока, <get name = "username"/>.
+        </li>
+        <li>
+          Возвращайся, <get name = "username"/>!
+        </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ПРОЩАЙ</pattern>
+    <template>
+      <srai>ПОКА</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ДО СВИДАНИЯ</pattern>
+    <template>
+      <srai>ПОКА</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>КТО ТЫ</pattern>
+    <template>
+      <random>
+        <li>Я – просто бот распознаватель азбуки морзе.</li>
+        <li>Обычный бот распознаватель на шарпе</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О СЕБЕ</pattern>
+    <template>
+      <srai>КТО ТЫ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ТЫ КТО</pattern>
+    <template>
+      <srai>КТО ТЫ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>КТО ТЫ?</pattern>
+    <template>
+      <srai>КТО ТЫ</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ АНЕКДОТ</pattern>
+    <template>
+      <random>
+        <li>Купил мужчина шляпу, а она ему как раз.</li>
+        <li>Идет медведь по лесу, видит, машина горит. Сел в нее и сгорел</li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>КАК ДЕЛА</pattern>
+    <template>
+      <random>
+        <li>Скучно, никто не пишет.</li>
+        <li>Не оч(</li>
+        <li>Я программа на ~1000 строк, у меня нет дел</li>
+      </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>ПОГОВОРИМ О * </pattern>
+    <template>
+      Да, давай о <set name="topic">
+        <star/>
+      </set>
+    </template>
+  </category>
+
+  <category>
+    <pattern>РАССКАЖИ О * </pattern>
+    <template>
+      Да, давай о <set name="topic">
+        <star/>
+      </set>
+    </template>
+  </category>
+
+  <topic name="АЗБУКЕ МОРЗЕ">
+    <category>
+      <pattern>РАССКАЖИ О НЕЙ ПОДРОБНЕЕ</pattern>
+      <template>
+        Азбука Мо́рзе, «Морзя́нка», Код Мо́рзе — способ знакового кодирования, представление букв алфавита, цифр, знаков препинания и других символов последовательностью сигналов: длинных (тире) и коротких (точек).
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так об азбуке морзе же.
+      </template>
+    </category>
+  </topic>
+
+ <topic name="букве а">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве А.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве б">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -...
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Б.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве в">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .--
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве В.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве г">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как --.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Г.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве д">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -..
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Д.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве е">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Е.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ж">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ...-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ж.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве з">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как --..
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве З.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве и">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ..
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве И.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве к">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -.-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве К.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве л">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .-..
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Л.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве м">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как --
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве М.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве н">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Н.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве о">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ---
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве О.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве п">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .--.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве П.
+      </template>
+    </category>
+  </topic>
+  
+  <topic name="букве р">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .-.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Р.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве с">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ...
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве С.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве т">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Т.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве у">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ..-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве У.
+      </template>
+    </category>
+  </topic>
+  
+  <topic name="букве ф">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ..-.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ф.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве х">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ....
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Х.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ш">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ----
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ш.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве щ">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как --.-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Щ.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ы">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -.--
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ы.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ь">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -..-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ь.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве э">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ..-..
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Э.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ю">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как ..--
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ю.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве я">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как .-.-
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Я.
+      </template>
+    </category>
+  </topic>
+
+  <topic name="букве ц">
+    <category>
+      <pattern>КАК ОНА КОДИРУЕТСЯ</pattern>
+      <template>
+        Буква кодируется как -.-.
+      </template>
+    </category>
+
+    <category>
+      <pattern>О ЧЕМ МЫ ГОВОРИМ</pattern>
+      <template>
+        Так о букве Ц.
+      </template>
+    </category>
+  </topic>
+
+
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>Не понял тебя(</li>
+        <li>Непонятно :/</li>
+        <li>Давай заново(</li>
+        <li>Не понял твой вопрос</li>
+        <li>Я на такие вопросы не отвечаю</li>
+      </random>
+    </template>
+  </category>
+  
+</aiml>
